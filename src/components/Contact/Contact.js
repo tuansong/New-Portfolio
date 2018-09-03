@@ -22,16 +22,17 @@ export default class AboutMe extends Component {
             <form method="get" action={CV}>
               <button className="cv">Download my CV</button>
             </form>
-            {this.state.openModal ?
-              <GetInTouch closeModal={() => this.setState({ openModal: !this.state.openModal })} />
-              : null}
+            
             <button className="get-in-touch"
               onClick={() => this.setState({ openModal: !this.state.openModal })}
             >Get In Touch
         </button>
           </div>
         </Animated>
-        <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true}>
+        {this.state.openModal ?
+              <GetInTouch closeModal={() => this.setState({ openModal: !this.state.openModal })} />
+              : null}
+        <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true} style={{zIndex: 2}}>
           <p>Or contact with me on social </p>
           <div className="social">
             <a><i className="fab fa-facebook fb" style={{ fontSize: 60 }}></i></a>

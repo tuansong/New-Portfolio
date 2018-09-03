@@ -9,7 +9,7 @@
     color: aliceblue;
     padding: 0.5em;
     padding-top: 2em;
-    animation: fade-in 2s; 
+    animation: fade-in 0.9s; 
 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

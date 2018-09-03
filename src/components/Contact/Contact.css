@@ -21,6 +21,7 @@
 .social a {
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 2;
 }
 
 .social a .fb:hover {
