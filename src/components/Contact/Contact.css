@@ -1,0 +1,44 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv, .get-in-touch {
+    margin: 0.6em;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.social a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social a .fb:hover {
+    color: rgb(59, 89, 152);
+    cursor: pointer;
+}
+
+.social a .github:hover {
+    color: rgb(85, 80, 80);
+    cursor: pointer;
+}
+
+.social a .linkedin:hover {
+    color: rgb(59, 89, 152);
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}

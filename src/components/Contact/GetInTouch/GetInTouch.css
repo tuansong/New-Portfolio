@@ -1,0 +1,83 @@
+.Modal {
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    background-color: #FFCC80;
+    border: 1px solid #eee;
+    border-radius: 5%;
+    z-index: 1;
+    color: aliceblue;
+    padding: 0.5em;
+    padding-top: 2em;
+    animation: fade-in 2s; 
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.btn-close {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    right: 1em;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .Modal {
+        width: 50%;
+        border-radius: 3%;
+    }
+    .button button {
+        width: 30%;
+    }
+}
+
+.input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 3em;
+}
+
+textarea:focus, .input:focus{
+    outline: none;
+}
+
+.button {
+    text-align: center;
+    margin: 2em;
+}
+
+.button button {
+    display: inline-block;
+    background-color: #FFA000;
+    border: none;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.button button:hover {
+    background-color:#FFF3E0;
+}
+
+.button .fb {
+    color: rgb(59, 89, 152);
+    font-weight: bold
+}
+
+.fb-icon {
+    font-size: 60px;
+}
+
+.button a i:hover {
+    color: rgb(59, 89, 152)
+}

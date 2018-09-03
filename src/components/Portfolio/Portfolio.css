@@ -1,0 +1,64 @@
+.container {
+    /* display: flex;
+    flex-direction: row; */
+    /* overflow-x: scroll; */
+}
+
+.gallery {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #FF6E40;
+}
+
+.gallery .img-info {
+    width: 100%;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color:rgba(247, 149, 21, 0.541);
+}
+
+/* .gallery img {
+    width: 200px;
+    height: 200px;
+} */
+
+#mygallery{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mygallery div {
+    position: relative;
+    width: 25%;
+    height: 30%;
+    float: left;
+    margin: 5px;    
+}
+
+#mygallery div p {
+    margin-left: 50%;
+    background: rgba(247, 149, 21, 0.541);
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 0px;
+    font-weight: bold;
+    position: relative;
+    left: 0px;
+}
+
+#mygallery div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
