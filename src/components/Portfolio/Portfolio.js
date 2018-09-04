@@ -89,10 +89,6 @@ export default class Portfolio extends Component {
   render() {
     const imgs = this.state.images.map((img, i) => {
       return (
-        // <div>
-        //     <img alt={`project ${i}`} src={img.src} />
-        //     <p>Desc</p>
-        // </div>
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div class="front" style={{ background: `url(${img.src})` }}>
@@ -109,11 +105,9 @@ export default class Portfolio extends Component {
     });
     return (
       <div className="img-container">
-        {/* <div id="mygallery" > */}
         <div className="wow zoomInDown" data-wow-delay="0.5s">
           {imgs}
         </div>
-        {/* </div> */}
       </div>
     )
   }
