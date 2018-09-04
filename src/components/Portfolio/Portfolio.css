@@ -1,7 +1,14 @@
-.container {
-    /* display: flex;
-    flex-direction: row; */
-    /* overflow-x: scroll; */
+.img-container {   
+    position: absolute;
+    top: 25%;
+    padding-top: 10px;
+    width: 80%;
+    height: 70vh;
+    overflow: hidden;
+    text-align: center;
+
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .gallery {
@@ -62,3 +69,65 @@
     border-radius: 5px;
 }
 
+
+/* entire container, keeps perspective */
+.flip-container {
+    float: left;
+    width: 30%;
+    height: 30%;
+    margin: 5px;
+    margin-top: 10px;
+  }
+      /* flip the pane when hovered */
+      .flip-container:hover .flipper, .flip-container.hover .flipper {
+          transform: rotateY(180deg);
+      }
+  
+  .flip-container, .front, .back {
+      width: 200px;
+      height: 200px;
+  }
+  
+  /* flip speed goes here */
+  .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+  }
+  
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 10px 18px #888888;
+  }
+
+  .front {
+    background-color: red;
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+      background-size:     cover!important;
+      background-repeat:   no-repeat!important;
+      background-position: center center !important;
+  }
+  
+  /* back, initially hidden pane */
+  .back {
+    background-color: #C5CAE9;
+      transform: rotateY(180deg);
+    text-align: center;
+  }
+  
+  .back i {
+      cursor: pointer;
+  }
+
+  .back i:hover {
+    color: #888888;
+  }
+  
+  
