@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import ReactSiema from 'react-siema';
-import { Animated } from 'react-animated-css';
 
 import moviedb from '../../Assets/portfolio/moviedb.png';
 import stripe from '../../Assets/portfolio/stripe.png';
-import bussy from '../../Assets/portfolio/Bussy.png';
 import giftedChat from '../../Assets/portfolio/giftedChat.png';
 import minTweet from '../../Assets/portfolio/minTweet.PNG';
 import OldPortfolio from '../../Assets/portfolio/OldPortfolio.PNG';
@@ -89,15 +86,15 @@ export default class Portfolio extends Component {
   render() {
     const imgs = this.state.images.map((img, i) => {
       return (
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
-            <div class="front" style={{ background: `url(${img.src})` }}>
+        <div className="flip-container" ontouchstart="this.classList.toggle('hover');" key={i}>
+          <div className="flipper">
+            <div className="front" style={{ background: `url(${img.src})` }}>
               <div className="pj-name"></div>
             </div>
-            <div class="back">
+            <div className="back">
               <h1>{img.name}</h1>
               <p>{img.description}</p>
-              <a href={img.github} target="_blank"><i class="fab fa-github" style={{ fontSize: 40 }}></i></a>
+              <a href={img.github} target="_blank"><i className="fab fa-github" style={{ fontSize: 40 }}></i></a>
             </div>
           </div>
         </div>

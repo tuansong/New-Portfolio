@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import banner from '../../Assets/background.jpg';
-// import particles from '../../Assets/particles.json';
-// import particlesJS from 'particles.js';
 import { Route, NavLink, Switch } from 'react-router-dom';
 
 import './Header.css';
@@ -36,7 +34,6 @@ export default class Header extends Component {
   }
 
   hoverHandler = (i) => {
-    console.log(i);
     let cloneBtns = this.state.buttonList;
     cloneBtns[i].animated = !cloneBtns[i].animated;
     this.setState({
@@ -47,7 +44,6 @@ export default class Header extends Component {
   render() {
     const defaultBtnClass = "nav-btn"
     const buttons = this.state.buttonList.map( (btn, i) => {
-     // console.log(btn.animated);
       return <a key={i} className={btn.animated ? "bounce" : ""} 
         onMouseEnter={() => this.hoverHandler(i)} 
         onMouseLeave={() => this.hoverHandler(i)}

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import WOW from 'wow.js';
-import { Animated } from 'react-animated-css';
 
 import './AboutMe.css';
 import avatar from '../../Assets/avatar.jpg';
@@ -13,7 +12,6 @@ export default class AboutMe extends Component {
 
   componentDidMount() {
     const wow = new WOW();
-    console.log(wow);;
     wow.init();
   }
 
