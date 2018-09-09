@@ -24,6 +24,10 @@
     z-index: 2;
 }
 
+a .fab {
+    color: aliceblue;
+}
+
 .social a .fb:hover {
     color: rgb(59, 89, 152);
     cursor: pointer;

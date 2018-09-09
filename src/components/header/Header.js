@@ -51,7 +51,7 @@ export default class Header extends Component {
     });
     return (
       <div className="header">
-        <img src={banner} alt="banner"/>
+        <img src="https://images.unsplash.com/photo-1520188740392-665a13f453fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=980b58045f9feb15fa6ced70952d9efc&auto=format&fit=crop&w=1934&q=80" alt="banner"/>
         <h1 className="banner-title bounce">TusoTR's</h1>
         <div className="navbar">
           {buttons}

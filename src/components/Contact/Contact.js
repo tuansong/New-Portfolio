@@ -22,22 +22,22 @@ export default class AboutMe extends Component {
             <form method="get" action={CV}>
               <button className="cv">Download my CV</button>
             </form>
-            
-            <button className="get-in-touch"
+
+            {/* <button className="get-in-touch"
               onClick={() => this.setState({ openModal: !this.state.openModal })}
             >Get In Touch
-        </button>
+        </button> */}
           </div>
         </Animated>
         {this.state.openModal ?
-              <GetInTouch closeModal={() => this.setState({ openModal: !this.state.openModal })} />
-              : null}
-        <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true} style={{zIndex: 2}}>
+          <GetInTouch closeModal={() => this.setState({ openModal: !this.state.openModal })} />
+          : null}
+        <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true} style={{ zIndex: 2 }}>
           <p>Or contact with me on social </p>
           <div className="social">
-            <a><i className="fab fa-facebook fb" style={{ fontSize: 60 }}></i></a>
-            <a><i className="fab fa-github-square github" style={{ fontSize: 60 }}></i></a>
-            <a><i className="fab fa-linkedin linkedin" style={{ fontSize: 60 }}></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100015026195380"><i className="fab fa-facebook fb" style={{ fontSize: 60 }}></i></a>
+            <a href="https://github.com/tuansong"><i className="fab fa-github-square github" style={{ fontSize: 60 }}></i></a>
+            <a href="https://www.linkedin.com/in/tran-song-372a3b133/"><i className="fab fa-linkedin linkedin" style={{ fontSize: 60 }}></i></a>
           </div>
         </Animated>
       </div>

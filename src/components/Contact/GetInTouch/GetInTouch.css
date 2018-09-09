@@ -2,7 +2,7 @@
     position: absolute;
     width: 35%;
     height: 50%;
-    background-color: #FFCC80;
+    background-color: #FFA000;
     border: 1px solid #eee;
     border-radius: 5%;
     z-index: 1;
@@ -40,10 +40,11 @@
 
 .input {
     border: none;
+    font-size: 110%;
     background: transparent;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid gray;
     width: 100%;
-    height: 3em;
+    height: 2em;
 }
 
 textarea:focus, .input:focus{
@@ -57,7 +58,7 @@ textarea:focus, .input:focus{
 
 .button button {
     display: inline-block;
-    background-color: #FFA000;
+    background-color: whitesmoke;
     border: none;
     width: 20%;
     height: 30px;
@@ -80,4 +81,13 @@ textarea:focus, .input:focus{
 
 .button a i:hover {
     color: rgb(59, 89, 152)
+}
+
+@media (max-width: 1390px) {
+    .Modal {
+        padding-top: 1em;
+    }
+    .input {
+        height: 1em;
+    }
 }
